@@ -13,7 +13,7 @@ public class FileReading {
         String Password = input.substring(input.indexOf(' ')+1,input.length());
 
 
-        if ((Username.equals("pawan")) && (Password.equals("kalyan"))) {
+        if ((Username.equals("suman")) && (Password.equals("nagella"))) {
           found = true; // added this to set found
           System.out.println("Success");
 
