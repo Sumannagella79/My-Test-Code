@@ -11,7 +11,7 @@ S3_BUCKET = "your-s3-bucket"  # please replace with your bucket name
 CHUNK_SIZE = 10000  # determined based on API, memory constraints, experimentation
 
 //Stores "states" data from the API in csv format as an object in an S3 bucket using the timestamp as the object key.
-//pulls data and stores in s3 bucket for every 5 minutes
+
 def _get_key():
     dt_now = datetime.now(tz=timezone.utc)
     KEY = (
