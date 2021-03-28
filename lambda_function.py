@@ -75,11 +75,8 @@ def lambda_handler(event, context):
     for f in files:
         s3_client.upload_file(LOCAL_FILE_SYS + "/" + f, S3_BUCKET, key + f)
         
-           AWS.config.region = 'us-east-1';
-
 exports.handler = function( event, context ) {
-
-    var ddb = new AWS.DynamoDB(),
+ var ddb = new AWS.DynamoDB(),
         bucket = event.Records[ 0 ].s3.bucket.name,
         key = event.Records[ 0 ].s3.object.key,
         params = {
